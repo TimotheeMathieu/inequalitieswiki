@@ -1,29 +1,25 @@
-on: push
 
-language: node_js
+name: Create wiki
 
-node_js:
-  - "11"
-dist: trusty
-sudo: false
+on:
+  push:
 
-branches:
-  only:
-  - main
+jobs:
+  build:
 
-install:
-  - git clone –depth 1 https://github.com/Jermolene/TiddlyWiki5.git
-  - cd TiddlyWiki5
-  - npm link
-  - cd ..
+    runs-on: ubuntu-latest
 
-script:
-  - tiddlywiki –verbose –build index
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x, 16.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
-  local_dir: output
-  on:
-    branch: main
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm install -g tiddlywiki
+    - run: tiddlywiki docs --build index  
