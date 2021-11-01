@@ -1,4 +1,7 @@
+on: push
+
 language: node_js
+
 node_js:
   - "11"
 dist: trusty
