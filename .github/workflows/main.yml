@@ -24,7 +24,5 @@ jobs:
       - name: Build
         run: tiddlywiki wiki --build index 
       - uses: actions/download-artifact@v2
-        with:
-          path: /wiki/
       - name: 'Echo download path'
           run: echo ${{steps.download.outputs.download-path}}
