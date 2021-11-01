@@ -22,4 +22,8 @@ jobs:
       - name: Install Dependencies
         run: npm install -g tiddlywiki
       - name: Build
-        run: tiddlywiki docs --build index 
+        run: tiddlywiki wiki --build index 
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./wiki
+          publish_branch: master  # deploying branch
