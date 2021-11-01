@@ -22,7 +22,5 @@ jobs:
       - name: Install Dependencies
         run: npm install -g tiddlywiki
       - name: Build
-        run: tiddlywiki wiki --build index 
+        run: tiddlywiki wiki --build index
       - uses: actions/download-artifact@v2
-      - name: 'Echo download path'
-          run: echo ${{steps.download.outputs.download-path}}
