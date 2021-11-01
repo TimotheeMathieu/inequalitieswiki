@@ -1,16 +1,25 @@
-
-name: Create wiki
+name: Pages
 
 on:
   push:
 
 jobs:
-  build:
-
+  pages:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-      uses: actions/setup-node@v2
-    - run: npm install -g tiddlywiki
-    - run: tiddlywiki docs --build index  
+      - uses: actions/checkout@v2
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - name: Cache NPM dependencies
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-npm-cache
+          restore-keys: |
+            ${{ runner.OS }}-npm-cache
+      - name: Install Dependencies
+        run: npm install -g tiddlywiki
+      - name: Build
+        run: tiddlywiki docs --build index 
