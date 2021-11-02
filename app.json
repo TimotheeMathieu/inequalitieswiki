@@ -5,7 +5,7 @@
       "tiddlywiki",
       "wiki"
     ],
-    "repository": "https://github.com/bmann/tiddlywiki-heroku",
+    "repository": "https://github.com/TimotheeMathieu/wiki_inequalities",
     "env": {
         "ADMIN": {
           "description": "The username for your admin to login with",
