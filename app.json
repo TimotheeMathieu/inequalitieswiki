@@ -13,7 +13,7 @@
         },
         "PASSWORD": {
           "description": "Password for the admin account",
-          "value": "ch4ng3m3"
+          "value": "cookie42"
         }
     }
 }
