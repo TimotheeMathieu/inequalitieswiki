@@ -4,7 +4,7 @@
         "title": "$:/plugins/felixhayashi/tiddlymap/graph/views/Live View/filter/edges",
         "text": "\n\n",
         "type": "text/vnd.tiddlywiki",
-        "filter": "-[prefix[_]] ",
-        "modified": "20191130231640767"
+        "modified": "20211102150658592",
+        "filter": "-[prefix[_]] "
     }
 ]

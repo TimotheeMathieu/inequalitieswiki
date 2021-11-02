@@ -1,7 +1,7 @@
 caption: {{$:/core/images/new-image-button}} {{$:/language/Buttons/NewImage/Caption}}
 created: 20211030161916016
 description: {{$:/language/Buttons/NewImage/Hint}}
-modified: 20211102094454456
+modified: 20211102150658312
 tags: $:/tags/PageControls
 title: $:/core/ui/Buttons/new-image
 type: text/vnd.tiddlywiki

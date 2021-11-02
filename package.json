@@ -8,5 +8,6 @@
   "main": "",
   "scripts": {
     "start": "tiddlywiki . --listen host=0.0.0.0 port=$PORT \"readers=(anon)\" writers=writer username=writer password=cookie"
-  }
+},
+"cacheDirectories": ["client/node_modules", "server/node_modules", "client/tiddlers", "server/tiddlers"]
 }

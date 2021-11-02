@@ -5,7 +5,7 @@ created: 20211030163443141
 description: Markdown link
 icon: $:/images/fa5/solid/link
 list-after: $:/core/ui/EditorToolbar/bold
-modified: 20211102094454574
+modified: 20211102150658429
 tags: $:/tags/EditorToolbar
 title: $:/Make markdown link
 type: text/vnd.tiddlywiki
