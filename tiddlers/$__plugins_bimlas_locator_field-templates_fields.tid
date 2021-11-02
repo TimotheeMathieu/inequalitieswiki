@@ -1,0 +1,10 @@
+caption: Fields
+created: 20211030230541676
+modified: 20211102094454614
+tags: $:/tags/bimlas/locator/context-item-templates
+title: $:/plugins/bimlas/locator/field-templates/fields
+type: text/vnd.tiddlywiki
+
+{{||$:/plugins/bimlas/locator/field-templates/link}}
+{{||$:/plugins/bimlas/locator/viewtemplate/field-list}}
+<hr style="border-top: double"/>

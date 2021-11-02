@@ -1,0 +1,18 @@
+button-classes: tc-text-editor-toolbar-item-start-group
+caption: {{$:/language/Buttons/Linkify/Caption}}
+condition: [<targetTiddler>type[text/x-markdown]]
+created: 20211030163443141
+description: Markdown link
+icon: $:/images/fa5/solid/link
+list-after: $:/core/ui/EditorToolbar/bold
+modified: 20211102094454574
+tags: $:/tags/EditorToolbar
+title: $:/Make markdown link
+type: text/vnd.tiddlywiki
+
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="wrap-selection"
+	prefix='<$link to="'
+	suffix='"/>'
+/>
