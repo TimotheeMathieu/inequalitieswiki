@@ -7,4 +7,4 @@
 
 ## See also
 
-<$link to="Rearangement inequality"/>
+<$link to="Rearrangement inequality"/>

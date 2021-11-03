@@ -9,7 +9,7 @@ and
 ### Order statistics
 
 A different way to say the same thing is that if $X_1,\dots,X_n, Y_1,\dots,Y_n$ are real numbers and $X_{(1)}\le \dots \le X_{(n)}$, $Y_{(1)}\le \dots \le Y_{(n)}$ are the order statistics of these numbers, then for any permutation $\sigma$, we have 
-$$ \sum_{i=1}^n X_i Y_{\sigma(n-i)}  \le \sum_{i=1}^n X_i Y_{\sigma(i)} \le \sum_{i=1}^n X_{(i)}Y_{(i)} $$
+$$ \sum_{i=1}^n X_{(i)} Y_{(n-i)}  \le \sum_{i=1}^n X_i Y_{\sigma(i)} \le \sum_{i=1}^n X_{(i)}Y_{(i)} $$
 ---
 
 ## See also

@@ -1,6 +1,6 @@
 ## Statement of the inequality
 
-> Let $H$ be a Hilbert space, with $<\cdot,\cdot>$ a scalar product and $\|\cdot\|$ the associated norm. Then, for any $u,v \in H$,
+> Let $E$ be an inner product space, with $<\cdot,\cdot>$ an inner product and $\|\cdot\|$ the associated norm. Then, for any $u,v \in E$,
 >
 > $$ |<u,v>|^2\le \|u\|\|v\|$$
 
@@ -15,3 +15,8 @@
 
 > let $X,Y$ be random variables with finite second moment
 > $$ \left(\mathbb{E}[XY]\right)^2 \le  \mathbb{E}[X^2] \mathbb{E}[Y^2]$$
+
+---
+
+### See also
+TODO
