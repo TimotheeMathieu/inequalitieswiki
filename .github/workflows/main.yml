@@ -21,6 +21,8 @@ jobs:
             ${{ runner.OS }}-npm-cache
       - name: Install Dependencies
         run: npm install -g tiddlywiki
+      - name: Disable sync
+        run: cp disable_sync.tid wiki/tiddlers
       - name: Build
         run: tiddlywiki wiki --build index
       - name: build html
