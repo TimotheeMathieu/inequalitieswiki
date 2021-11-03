@@ -22,7 +22,7 @@ jobs:
       - name: Install Dependencies
         run: npm install -g tiddlywiki
       - name: Disable sync
-        run: cp disable_sync.tid wiki/tiddlers
+        run: cp config_deploy/* wiki/tiddlers
       - name: Build
         run: tiddlywiki wiki --build index
       - name: build html
