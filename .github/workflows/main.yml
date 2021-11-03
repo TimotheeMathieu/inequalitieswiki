@@ -1,0 +1,44 @@
+name: Pages
+
+on:
+  push:
+
+jobs:
+  pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - name: Cache NPM dependencies
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-npm-cache
+          restore-keys: |
+            ${{ runner.OS }}-npm-cache
+      - name: Install Dependencies
+        run: npm install -g tiddlywiki
+      - name: Build
+        run: tiddlywiki wiki --build index
+        run: tiddlywiki wiki --rendertiddler $:/core/save/all index.html text/plain
+      - name: Commit files
+        id: commit
+        run: |
+          git config --local user.email "TimotheeMathieu@github.com"
+          git config --local user.name "github-actions"
+          git add --all
+          if [-z "$(git status --porcelain)"]; then
+             echo "::set-output name=push::false"
+          else
+             git commit -m "Add changes" -a
+             echo "::set-output name=push::true"
+          fi
+        shell: bash
+      - name: Push changes
+        if: steps.commit.outputs.push == 'true'
+        uses: ad-m/github-push-action@master
+        with:
+           github_token: ${{ secrets.GITHUB_TOKEN }}
