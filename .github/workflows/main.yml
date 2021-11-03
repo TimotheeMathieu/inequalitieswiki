@@ -24,7 +24,7 @@ jobs:
       - name: Build
         run: tiddlywiki wiki --build index
       - name: build html
-        run: tiddlywiki wiki --rendertiddler $:/core/save/all /index.html text/plain
+        run: tiddlywiki wiki --rendertiddler $:/core/save/all ../../index.html text/plain
       - name: Commit files
         id: commit
         run: |
