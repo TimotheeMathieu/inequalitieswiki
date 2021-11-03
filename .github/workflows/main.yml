@@ -24,7 +24,7 @@ jobs:
       - name: Build
         run: tiddlywiki wiki --build index
       - name: build html
-        run: tiddlywiki wiki --rendertiddler $:/core/save/all ../../index.html text/plain
+        run: tiddlywiki wiki --rendertiddler $:/core/save/all ../../public/index.html text/plain
       - name: Commit files
         id: commit
         run: |
@@ -43,3 +43,8 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
            github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+           github_token: ${{ secrets.GITHUB_TOKEN }}
+           publish_dir: ./public
