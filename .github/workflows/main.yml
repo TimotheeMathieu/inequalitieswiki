@@ -22,11 +22,31 @@ jobs:
       - name: Install Dependencies
         run: npm install -g tiddlywiki
       - name: Disable sync
-        run: cp config_deploy/* wiki/tiddlers
+        run: |
+            cp config_deploy/* wiki/tiddlers
+            rm wiki/tiddlers/\$__New\ inequality\ button.tid
       - name: Build
         run: tiddlywiki wiki --build index
       - name: build html
         run: tiddlywiki wiki --rendertiddler $:/core/save/all ../../public/index.html text/plain
+      - name: Commit files
+        id: commit
+        run: |
+          git config --local user.email "TimotheeMathieu@github.com"
+          git config --local user.name "github-actions"
+          git add --all
+          if [-z "$(git status --porcelain)"]; then
+             echo "::set-output name=push::false"
+          else
+             git commit -m "Add changes" -a
+             echo "::set-output name=push::true"
+          fi
+        shell: bash
+      - name: Push changes
+        if: steps.commit.outputs.push == 'true'
+        uses: ad-m/github-push-action@master
+        with:
+           github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
