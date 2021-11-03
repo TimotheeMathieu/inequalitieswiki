@@ -1,9 +1,0 @@
-created: 20211030154358150
-modified: 20211102150658328
-title: $:/core/ui/SideBarLists
-type: text/vnd.tiddlywiki
-
-<$transclude tiddler="$:/core/ui/SideBarSegments/search"/>
-
-<$transclude tiddler="$:/core/ui/SideBarSegments/tabs"/>
-
