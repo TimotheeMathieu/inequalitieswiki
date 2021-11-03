@@ -1,7 +1,11 @@
 created: 20211029203734297
-modified: 20211102084925479
-tags: 
+creator: TMat
+list-after: $:/core/ui/SideBar/Open
+modified: 20211103090559141
+modifier: TMat
+tags: $:/tags/SideBar
 title: Table of contents
+tmap.id: ca0c13da-2055-45e1-bbd6-aaa08977b52e
 type: text/vnd.tiddlywiki
 
 <div class="tc-table-of-contents">

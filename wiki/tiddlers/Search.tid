@@ -1,7 +1,8 @@
 created: 20211030070637321
-modified: 20211102084925469
+modified: 20211103090559134
 tags: toc
 title: Search
+tmap.id: 62dcb83e-7573-401e-a75a-62e6d1f31d85
 type: text/vnd.tiddlywiki
 
 \define lingo-base() $:/language/Search/

@@ -1,12 +1,14 @@
 created: 20211031103057015
-modified: 20211102084925409
+creator: writer
+modified: 20211103090810346
+modifier: TMat
 tags: toc
 title: How to
+tmap.id: ca4a7881-4dc0-463e-8765-dbd06d940f15
 type: text/vnd.tiddlywiki
 
-To use this wiki you can either 
+To use this wiki you can either
 
 * Search for the name of the inequality directly in the search bar
 * Search the inequality "by tags" by going to [[Search]], in the tab "Locator by tags", then click on the plus in front of the tags in the expendable tags list to narrow the search.
 
-To contribute, you can add your own inequality. Use the add inequality" (logo ≤ situated on the right sidebar). Don't forget to add tags describing the main components of the inequality (look at other inequalities for inspiration). 

@@ -4,7 +4,7 @@ created: 20211030170005597
 description: {{$:/language/Buttons/Bold/Hint}}
 icon: $:/core/images/bold
 list-after: $:/core/ui/EditorToolbar/bold
-modified: 20211102085454571
+modified: 20211103090558941
 shortcuts: ((bold))
 tags: $:/tags/EditorToolbar
 title: $:/plugins/tiddlywiki/markdown/EditorToolbar/bold
