@@ -1,0 +1,8 @@
+caption: Tag
+created: 20211106141023424
+modified: 20211106141114039
+tags: $:/tags/bimlas/locator/field-templates
+title: $:/plugins/bimlas/locator/field-templates/tag
+type: text/vnd.tiddlywiki
+
+<<tag>>

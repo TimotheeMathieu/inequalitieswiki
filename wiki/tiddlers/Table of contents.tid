@@ -1,7 +1,7 @@
 created: 20211029203734297
 creator: TMat
 list-after: $:/core/ui/SideBar/Open
-modified: 20211103090559141
+modified: 20211104083911676
 modifier: TMat
 tags: $:/tags/SideBar
 title: Table of contents
@@ -10,4 +10,4 @@ type: text/vnd.tiddlywiki
 
 <div class="tc-table-of-contents">
 <<toc-selective-expandable  "toc" "sort[title]">>
-</div>
+</div> 

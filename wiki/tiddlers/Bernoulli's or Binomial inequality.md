@@ -5,12 +5,16 @@
 * $( 1 + x )^r \ge 1 + r x$ for every real numbers $r \ge 1$ and $x \ge −1$. The inequalities are strict if $x \neq 0$ and $r \neq 0, 1$.
 * $( 1 + x )^r \le 1 + r x$ for every real numbers $0 \le r \le 1$ and $x \ge −1$.
 
-More generally :
-> Let $x_1,\dots,x_n$ be real numbers with same sign, greater than $-1$. Then,
-> $$\prod_{i=1}^n(1+x_i)\ge 1+x_1+x_2+\dots+x_n $$
+**More generally :**
+Let $x_1,\dots,x_n$ be real numbers with same sign, greater than $-1$. Then,
+$$\prod_{i=1}^n(1+x_i)\ge 1+x_1+x_2+\dots+x_n $$
 
 ---
 
 ## See also
 
 TODO
+
+## Reference 
+
+See Section 4 and in particular Theorem 4.1 of <$link to="Book: Inequalities Cvetkovski"/>
