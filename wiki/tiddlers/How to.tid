@@ -1,14 +1,15 @@
 created: 20211031103057015
 creator: writer
-modified: 20211103090810346
+modified: 20211109141034894
 modifier: TMat
 tags: toc
 title: How to
 tmap.id: ca4a7881-4dc0-463e-8765-dbd06d940f15
 type: text/vnd.tiddlywiki
 
-To use this wiki you can either
+To use this wiki you can either (from simple to more powerful)
 
 * Search for the name of the inequality directly in the search bar
 * Search the inequality "by tags" by going to [[Search]], in the tab "Locator by tags", then click on the plus in front of the tags in the expendable tags list to narrow the search.
+* Search using the [[$:/AdvancedSearch]], in particular see the "filter" tab in Advanced Search.
 
