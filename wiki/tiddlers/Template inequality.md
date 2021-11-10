@@ -1,13 +1,13 @@
-## Statement of the inequality
+# Statement of the inequality
 
 TODO
 
 ---
 
-## See also
+# See also
 
 TODO
 
-## Reference 
+# Reference 
 
 TODO

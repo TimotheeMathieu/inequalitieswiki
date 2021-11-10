@@ -1,4 +1,4 @@
-## Statement of the inequality
+# Statement of the inequality
 
 * $(1+x)^{r}\ge 1+rx$ for every integer $r \ge 0$ and real number $x \ge −1$. The inequality is strict if $x \neq 0$ and $r \ge 2$.
 * $( 1 + x )^r \ge 1 + r x$ for every even integer $r \ge 0$ and every real number x.
@@ -11,10 +11,10 @@ $$\prod_{i=1}^n(1+x_i)\ge 1+x_1+x_2+\dots+x_n $$
 
 ---
 
-## See also
+# See also
 
 TODO
 
-## Reference 
+# Reference 
 
 See Section 4 and in particular Theorem 4.1 of <$link to="Book: Inequalities Cvetkovski"/>
