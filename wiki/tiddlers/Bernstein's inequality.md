@@ -5,7 +5,7 @@
 Let $X_1,\dots,X_n$ be i.i.d. random variables such that $|X_i|\le c$ almost surely for some $c>0$. Then for any $\delta>0$, 
 $$\P\left(\frac{1}{n}\sum_{i=1}^n X_i -\E[X] > \sqrt{\frac{2\mathrm{Var}(X)t}{n}}+\frac{c t}{n} \right)\le e^{-t}$$
 and we also have the alternative form, for any $\varepsilon>0$,
-$$ \P\left(\frac{1}{n}\sum_{i=1}^n X_i -\E[X] > \varepsilon \right)\le \exp\left( -\frac{n\varepsilon^2}{2\left(\mathrm{Var}(X) + c^2\varepsilon \right)}\right) $$
+$$ \P\left(\frac{1}{n}\sum_{i=1}^n X_i -\E[X] > \varepsilon \right)\le \exp\left( -\frac{n\varepsilon^2}{2\left(\mathrm{Var}(X) + \frac{c}{3}\varepsilon \right)}\right) $$
 
 ## General version
 
